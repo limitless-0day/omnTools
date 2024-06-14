@@ -2,6 +2,8 @@
 
 A custom command-line tool that can be freely extended as needed.
 
+This tool is only available for the Windows platform, if you want to use it on Linux, go to [CmdUtils](https://github.com/lmliheng/CmdUtils).
+
 ## Deploy
 
 Enter on the command:
