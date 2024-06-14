@@ -4,6 +4,7 @@
 #include "main.h"
 #include "lib\model\model.h"
 #include "lib\tip\tip.h"
+#include "lib\mas\mas.h"
 
 using namespace std;
 
@@ -19,19 +20,22 @@ void version(int argc,char **argv){
 void (*tool[])(int,char**) = {
 	version,
 	model,
-	tip
+	tip,
+	mas
 };
 
 string tooln[] = {
 	"version",
 	"model",
-	"tip"
+	"tip",
+	"mas"
 };
 
 string toolh[] = {
 	"omn version",
 	"omn model [modelname] <objname>",
-	"omn tip [lang/shell]"
+	"omn tip [lang/shell]",
+	"mas"
 };
 
 int main(int argc,char **argv){
