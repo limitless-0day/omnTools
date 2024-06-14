@@ -34,8 +34,8 @@ string tooln[] = {
 string toolh[] = {
 	"omn version",
 	"omn model [modelname] <objname>",
-	"omn tip [lang/shell]",
-	"mas"
+	"omn tip [lang/shell/os] <key>",
+	"omn mas"
 };
 
 int main(int argc,char **argv){
