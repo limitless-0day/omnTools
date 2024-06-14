@@ -3,7 +3,7 @@
 using namespace std;
 
 void tip(int argc, char **argv) {
-    system("curl -s -o tip.omn https://mirrors.yunduanjianzhan.cn/omn/tip.omn");
+    system("curl -s -o tip.omn https://omn.agsn.site/omn/tip.omn");
     ifstream file("tip.omn");
 
     if (!file.is_open()) {
