@@ -22,7 +22,7 @@ If you're new to CMake or you want to avoid using commands, you can run `build.b
 
 ```shell
 cd omnTools
-build bat
+build.bat
 ```
 
 ## Usage
