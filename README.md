@@ -29,7 +29,7 @@ build.bat
 
 You can add the resulting executable to your computer's environment variables, which can then be easily used on the command line. Note: For ease of use, it is recommended that you change the name of the generated executable file to omn.exe.
 
-Here are some basic usages, but if you'd like to learn more, head over: https://omn.agsn.site.
+Here are some basic usages, but if you'd like to learn more, head over: [omnTools](https://omn.agsn.site).
 
 ```shell
 omn model mkdocs #Generate a MkDocs template.
