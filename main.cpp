@@ -5,6 +5,7 @@
 #include "lib\model\model.h"
 #include "lib\tip\tip.h"
 #include "lib\mas\mas.h"
+#include "lib\lang\lang.h"
 
 using namespace std;
 
@@ -21,21 +22,24 @@ void (*tool[])(int,char**) = {
 	version,
 	model,
 	tip,
-	mas
+	mas,
+	lang
 };
 
 string tooln[] = {
 	"version",
 	"model",
 	"tip",
-	"mas"
+	"mas",
+	"lang"
 };
 
 string toolh[] = {
 	"omn version",
 	"omn model [modelname] <objname>",
 	"omn tip [lang/shell/os] <key>",
-	"omn mas"
+	"omn mas",
+	"omn lang <dir>"
 };
 
 int main(int argc,char **argv){
