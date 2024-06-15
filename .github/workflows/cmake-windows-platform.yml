@@ -21,3 +21,6 @@ jobs:
 
     - name: Build
       run: cmake --build ${{github.workspace}}/build
+
+    - name: Print Version
+      run: ${{github.workspace}}/build/Debug/omnTools.exe version
