@@ -1,10 +1,10 @@
-#include "..\header\tip.h"
+#include "..\header\clist.h"
 
 using namespace std;
 
-void tip(int argc, char **argv) {
-    system("curl -s -o tip.omn https://omn.agsn.site/omn/tip.omn");
-    ifstream file("tip.omn");
+void clist(int argc, char **argv) {
+    system("curl -s -o clist.omn https://omn.agsn.site/omn/tip.omn");
+    ifstream file("clist.omn");
 
     if (!file.is_open()) {
         cerr << "Error opening file" << endl;
@@ -55,5 +55,5 @@ void tip(int argc, char **argv) {
     }
 
     file.close();
-    system("del tip.omn > nul");
+    system("del clist.omn > nul");
 }
