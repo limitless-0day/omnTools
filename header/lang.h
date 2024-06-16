@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef LONG_H
-#define LONG_H
+#ifndef LANG_H
+#define LANG_H
 
 #include <iostream>
 #include <filesystem>
