@@ -34,6 +34,6 @@ You can add the resulting executable to your computer's environment variables, w
 Here are some basic usages, but if you'd like to learn more, head over: [omnTools](https://omn.agsn.site).
 
 ```shell
-omn model mkdocs #Generate a MkDocs template.
+omn install mkdocs #Generate a MkDocs template.
 omn tip git #Print a collection of commonly used git commands.
 ```
