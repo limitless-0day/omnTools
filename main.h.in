@@ -1,4 +1,4 @@
-#define omnTools_VERSION_MAJOR @omnTools_VERSION_MAJOR@
-#define omnTools_VERSION_MINOR @omnTools_VERSION_MINOR@
-#define omnTools_VERSION_PATCH @omnTools_VERSION_PATCH@
-#define omnTools_VERSION_TWEAK @omnTools_VERSION_TWEAK@
+#define omn_VERSION_MAJOR @omn_VERSION_MAJOR@
+#define omn_VERSION_MINOR @omn_VERSION_MINOR@
+#define omn_VERSION_PATCH @omn_VERSION_PATCH@
+#define omn_VERSION_TWEAK @omn_VERSION_TWEAK@

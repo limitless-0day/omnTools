@@ -2,10 +2,10 @@
 #include <string>
 
 #include "main.h"
-#include "lib\model\model.h"
-#include "lib\tip\tip.h"
-#include "lib\mas\mas.h"
-#include "lib\lang\lang.h"
+#include "header\install.h"
+#include "header\tip.h"
+#include "header\mas.h"
+#include "header\lang.h"
 
 using namespace std;
 
@@ -20,36 +20,41 @@ void version(int argc,char **argv){
 
 void (*tool[])(int,char**) = {
 	version,
-	model,
+	install,
 	tip,
 	mas,
 	lang
 };
 
 string tooln[] = {
-	"version",
-	"model",
+	"v",
+	"i",
 	"tip",
 	"mas",
 	"lang"
 };
 
 string toolh[] = {
-	"omn version",
-	"omn model [modelname] <objname>",
-	"omn tip [lang/shell/os] <key>",
-	"omn mas",
-	"omn lang <dir>"
+	"omn v\n\tQuery the version",
+	"omn i [name]\n\tInstallation [name]",
+	"omn tip [lang/shell/os] <key>\n\tTo print the [lang/shell/os] command prompt list, you can use the <key> specified command keyword",
+	"omn mas\n\tActivate Windows quickly",
+	"omn lang <dir>\n\tStatistical language, using <dir> the specified directory"
 };
 
 int main(int argc,char **argv){
+	bool nocode = true;
 	if(argc==1){
 		for(int i=0;i<sizeof(toolh)/sizeof(string);i++)
 			cout<<toolh[i]<<endl;
 		return 0;
 	}
 	for(int i=0;i<sizeof(tooln)/sizeof(string);i++)
-		if(argv[1]==tooln[i])
+		if(argv[1]==tooln[i]){
+			nocode = false;
 			tool[i](argc,argv);
+			return 0;
+		}
+	if(nocode)cout<<"Not found \""<<argv[1]<<"\".";
 	return 0;
 }
