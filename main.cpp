@@ -2,7 +2,7 @@
 #include <string>
 
 #include "main.h"
-#include "lib\model\model.h"
+#include "lib\install\install.h"
 #include "lib\tip\tip.h"
 #include "lib\mas\mas.h"
 #include "lib\lang\lang.h"
@@ -20,7 +20,7 @@ void version(int argc,char **argv){
 
 void (*tool[])(int,char**) = {
 	version,
-	model,
+	install,
 	tip,
 	mas,
 	lang
@@ -28,7 +28,7 @@ void (*tool[])(int,char**) = {
 
 string tooln[] = {
 	"version",
-	"model",
+	"install",
 	"tip",
 	"mas",
 	"lang"
@@ -36,7 +36,7 @@ string tooln[] = {
 
 string toolh[] = {
 	"omn version",
-	"omn model [modelname] <objname>",
+	"omn install [installname] <objname>",
 	"omn tip [lang/shell/os] <key>",
 	"omn mas",
 	"omn lang <dir>"
