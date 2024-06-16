@@ -2,10 +2,10 @@
 #include <string>
 
 #include "main.h"
-#include "lib\install\install.h"
-#include "lib\tip\tip.h"
-#include "lib\mas\mas.h"
-#include "lib\lang\lang.h"
+#include "header\install.h"
+#include "header\tip.h"
+#include "header\mas.h"
+#include "header\lang.h"
 
 using namespace std;
 
@@ -27,19 +27,19 @@ void (*tool[])(int,char**) = {
 };
 
 string tooln[] = {
-	"version",
-	"install",
+	"v",
+	"i",
 	"tip",
 	"mas",
 	"lang"
 };
 
 string toolh[] = {
-	"omn version",
-	"omn install [installname] <objname>",
-	"omn tip [lang/shell/os] <key>",
-	"omn mas",
-	"omn lang <dir>"
+	"omn v\n\tQuery the version",
+	"omn i [name]\n\tInstallation [name]",
+	"omn tip [lang/shell/os] <key>\n\tTo print the [lang/shell/os] command prompt list, you can use the <key> specified command keyword",
+	"omn mas\n\tActivate Windows quickly",
+	"omn lang <dir>\n\tStatistical language, using <dir> the specified directory"
 };
 
 int main(int argc,char **argv){
