@@ -3,7 +3,7 @@
 
 #include "main.h"
 #include "header\install.h"
-#include "header\tip.h"
+#include "header\clist.h"
 #include "header\mas.h"
 #include "header\lang.h"
 
@@ -21,7 +21,7 @@ void version(int argc,char **argv){
 void (*tool[])(int,char**) = {
 	version,
 	install,
-	tip,
+	clist,
 	mas,
 	lang
 };
@@ -29,17 +29,18 @@ void (*tool[])(int,char**) = {
 string tooln[] = {
 	"v",
 	"i",
-	"tip",
+	"l",
 	"mas",
 	"lang"
 };
 
 string toolh[] = {
-	"omn v\n\tQuery the version",
-	"omn i [name]\n\tInstallation [name]",
-	"omn tip [lang/shell/os] <key>\n\tTo print the [lang/shell/os] command prompt list, you can use the <key> specified command keyword",
-	"omn mas\n\tActivate Windows quickly",
-	"omn lang <dir>\n\tStatistical language, using <dir> the specified directory"
+	"\033[1;36;40mcommand lists\033[0m",
+	"\033[1;32;40momn v\033[0m\tQuery the version",
+	"\033[1;32;40momn i [name]\033[0m\tInstallation [name]",
+	"\033[1;32;40momn l [lang/shell/os] <key>\033[0m\tTo print the [lang/shell/os] command prompt list, you can use the <key> specified command keyword",
+	"\033[1;32;40momn mas\033[0m\tActivate Windows quickly",
+	"\033[1;32;40momn lang <dir>\033[0m\tStatistical language, using <dir> the specified directory"
 };
 
 int main(int argc,char **argv){
