@@ -4,7 +4,6 @@
 #include "main.h"
 #include "header\install.h"
 #include "header\clist.h"
-#include "header\mas.h"
 #include "header\lang.h"
 
 using namespace std;
@@ -22,7 +21,6 @@ void (*tool[])(int,char**) = {
 	version,
 	install,
 	clist,
-	mas,
 	lang
 };
 
@@ -30,7 +28,6 @@ string tooln[] = {
 	"v",
 	"i",
 	"l",
-	"mas",
 	"lang"
 };
 
@@ -39,7 +36,6 @@ string toolh[] = {
 	"\033[1;32;40momn v\033[0m\tQuery the version",
 	"\033[1;32;40momn i [name]\033[0m\tInstallation [name]",
 	"\033[1;32;40momn l [lang/shell/os] <key>\033[0m\tTo print the [lang/shell/os] command prompt list, you can use the <key> specified command keyword",
-	"\033[1;32;40momn mas\033[0m\tActivate Windows quickly",
 	"\033[1;32;40momn lang <dir>\033[0m\tStatistical language, using <dir> the specified directory"
 };
 
