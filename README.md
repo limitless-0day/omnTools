@@ -31,7 +31,7 @@ build.bat
 
 You can add the resulting executable to your computer's environment variables, which can then be easily used on the command line. Note: For ease of use, it is recommended that you change the name of the generated executable file to omn.exe.
 
-Here are some basic usages, but if you'd like to learn more, head over: [omnTools](/wiki).
+Here are some basic usages, but if you'd like to learn more, head over: [omnTools]([/wiki](https://github.com/limitless-0day/omnTools/wiki/).
 
 ```shell
 omn i mingw #Install mingw.
