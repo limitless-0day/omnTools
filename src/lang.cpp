@@ -36,6 +36,11 @@ unordered_map<string, LanguageInfo> languageDefinitions = {
     {"SQL", { {".sql",".ddl",".dml",".dcl"}, {} }},
     {"XML", { {".xml", ".xsd",".svg",".xhtml",".xslt"}, {} }},
 	
+    {"Mrakdown", { {".md"}, {} }},
+    {"ini", { {".ini"}, {} }},
+    {"yaml", { {".yml"}, {} }},
+    {"toml", { {".tml"}, {} }},
+	
     {"WindowsCommand", { {".cmd",".bat"}, {} }},
     {"Powershell", { {".ps1"}, {} }},
     {"LinuxShell", { {".sh"}, {} }},
