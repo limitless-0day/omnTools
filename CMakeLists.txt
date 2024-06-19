@@ -5,7 +5,7 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-project(omnTools VERSION 1.0.4.3)
+project(omnTools VERSION 1.0.4.4)
 add_executable(omnTools main.cpp src/install.cpp header/install.h src/clist.cpp header/clist.h src/lang.cpp header/lang.h)
 configure_file(main.h.in main.h)
 
