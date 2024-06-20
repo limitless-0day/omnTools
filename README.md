@@ -35,5 +35,5 @@ Here are some basic usages, but if you'd like to learn more, head over: [omnTool
 
 ```shell
 omn i mingw #Install mingw.
-omn tip git #Print a collection of commonly used git commands.
+omn l git #Print a collection of commonly used git commands.
 ```
