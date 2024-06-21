@@ -24,3 +24,6 @@ jobs:
 
     - name: Print Version
       run: ${{github.workspace}}/build/Debug/omnTools.exe v
+
+    - name: Print Help
+      run: ${{github.workspace}}/build/Debug/omnTools.exe
