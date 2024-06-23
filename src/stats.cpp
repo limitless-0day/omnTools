@@ -1,4 +1,5 @@
 #include "..\header\stats.h"
+#include "..\lib\ProgressBar\ProgressBar.h"
 
 using namespace std;
 namespace fs = filesystem;
@@ -119,9 +120,14 @@ string determineLanguageForHeader(const fs::path& headerFilePath) {
 
 void LanguageByType(fs::path& directory){
     unordered_map<string, LanguageStats> stats;
-    size_t totalChars = 0;
-
+    size_t totalChars = 0, allfile=0, thefile=0;
+	
+	for (const auto& entry : fs::recursive_directory_iterator(directory))allfile++;
+	ProgressBar pb(0, int(allfile), '=');
+	
     for (const auto& entry : fs::recursive_directory_iterator(directory)) {
+        pb.setCurrentValue(++thefile);
+        pb.display();
         if (entry.is_regular_file()) {
             string extension = entry.path().extension().string();
             string filename = entry.path().filename().string();
@@ -149,6 +155,8 @@ void LanguageByType(fs::path& directory){
             }
         }
     }
+	
+    std::cout << std::endl;
 	
     cout << setw(15) << "Language" 
               << setw(15) << "File Count" 
