@@ -5,6 +5,7 @@
 #include "header\install.h"
 #include "header\clist.h"
 #include "header\stats.h"
+#include "header\extractor.h"
 
 using namespace std;
 
@@ -21,14 +22,16 @@ void (*tool[])(int,char**) = {
 	version,
 	install,
 	clist,
-	stats
+	stats,
+	extractor
 };
 
 string tooln[] = {
 	"v",
 	"i",
 	"l",
-	"s"
+	"s",
+	"e"
 };
 
 string toolh[] = {
@@ -36,7 +39,8 @@ string toolh[] = {
 	"\033[1;32;40momn v\033[0m\tQuery the version",
 	"\033[1;32;40momn i [name]\033[0m\tInstallation [name]",
 	"\033[1;32;40momn l [lang/shell/os] <key>\033[0m\tTo print the [lang/shell/os] command prompt list, you can use the <key> specified command keyword",
-	"\033[1;32;40momn s <dir>\033[0m\tStatistical language(-l) file or all file type(-a), using <dir> the specified directory"
+	"\033[1;32;40momn s <dir>\033[0m\tStatistical language file(-l) or all file(-a), using <dir> the specified directory",
+	"\033[1;32;40momn e [srctype] [dir]\033[0m\tTo extract resources, you need to specify the source file type, which currently supports 'apk'."
 };
 
 int main(int argc,char **argv){
