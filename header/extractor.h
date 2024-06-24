@@ -10,7 +10,7 @@
 
 class ApkExtractor {
 public:
-    static void extractResourcesFromApk(const std::string& apkPath);
+    static void extractResourcesFromApk(const std::string& apkPath, bool flattenStructure = false);
 
 private:
     static bool isImageFile(const std::string& extension);
@@ -18,8 +18,8 @@ private:
     static bool isAudioFile(const std::string& extension);
     static void createDirectories(const std::filesystem::path& baseOutputDir, const std::filesystem::path& relativePath);
     static void copyFile(const std::filesystem::path& filePath, const std::filesystem::path& outputDir, const std::filesystem::path& relativePath);
-    static void extractMediaFiles(const std::filesystem::path& extractedDir, const std::filesystem::path& outputDir);
+    static void extractMediaFiles(const std::filesystem::path& extractedDir, const std::filesystem::path& outputDir, bool flattenStructure);
 };
 
-void extractor(int argc,char**argv);
+void extractor(int argc, char** argv);
 #endif // EXTRACTOR_H
